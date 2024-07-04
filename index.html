@@ -14,8 +14,10 @@
 <body>
     <div class="navbar">
         <div class="navbar-wrap">
-            <h1>Joebim<span>.</span></h1>
-            <div class="button">Let's Chat</div>
+            <h1 data-testid="slackDisplayName" id="name">Joebim<span>.</span></h1>
+            <a href="https://calendly.com/josey359/15min" target=”_blank”>
+                <div class="button">Let's Chat</div>
+            </a>
         </div>
 
         <hr>
@@ -24,28 +26,100 @@
     <div class="container">
         <div class="right-side-content">
             <div class="profile-details">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-            </div>
-            <div class="footer">
-                <div class="">
-                    <p></p>
-                    <div class="button">Let's Chat</div>
+                <div class="profile-details-contain">
+                    <div class="title-time-contain">
+                        <h1 data-testid="slackDisplayName" id="name" class="name">Joebim<span>.</span></h1>
+
+                        <div class="time-details-contain">
+                            <div data-testid="currentTimeUTC" id="time" class=""></div>
+                            <div data-testid="currentDay" id="day" class=""></div>
+                        </div>
+
+
+                    </div>
+                    <p data-testid="slackEmail" class="email">josey359@gmail.com</p>
                 </div>
-                <div class="">
-                    <div></div>
-                    <hr>
-                    <div></div>
-                    <hr>
-                    <div></div>
-                    <hr>
+                <div class="goals-section">
+                    <div class="goals-head-contain">
+                        <h1 class="goal-title">Frontend Goals<span>.</span></h1>
+                        <div>2 years</div>
+
+                    </div>
+
+                    <div class="goals">
+                        <div class="goal-column">
+                            <div class="goal">
+                                <p class="goal-title">Tech Goals</p>
+                                <div class="goal-items">
+                                    <li>Master Other framework (Angular, Vue.js, Nextjs)</li>
+                                    <li>Deepen UI/UX design (user research, usability)</li>
+                                    <li>Champion Accessibility (WCAG compliance)</li>
+                                    <li>Explore Backend (Node.js, Python, APIs)</li>
+
+                                </div>
+
+                            </div>
+                            <div class="goal">
+                                <p class="goal-title">Skill Sharpening</p>
+                                <div class="goal-items">
+
+                                    <li>Level Up JavaScript (object-oriented, functional, async)</li>
+                                    <li>Master a CSS preprocessor (Sass, Less)</li>
+                                    <li>Master a JS Library (jQuery, D3.js)</li>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="goal-column">
+                            <div class="goal">
+                                <p class="goal-title">Project Vision</p>
+                                <div class="goal-items">
+
+                                    <li>Develop a Single-Page App with unique function</li>
+                                    <li>Build an Interactive Portfolio Website</li>
+                                    <li>Design a Problem-Solving Web App</li>
+                                </div>
+
+                            </div>
+                            <div class="goal">
+                                <p class="goal-title">Learning Path</p>
+                                <div class="goal-items">
+
+                                    <li>Online Courses & Tutorials (Coursera, Udemy)</li>
+                                    <li>Read Relevant Tech Books</li>
+                                    <li>Learn 3D With Threejs</li>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
         </div>
         <div class="left-side-content">
-            <img src="./assets/images/profile-img.png" alt="">
+            <div class="content-contain">
+                <div class="picture-contain">
+                    <img data-testid="slackProfilePicture" src="./assets/images/profile-img.png" alt="">
+                </div>
+                <div class="picture-info">
+                    <div class="picture-info-contain">
+                        <h1>HNG Internship Student</h1>
+                        <p>Frontend Track</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="links">
+            <a data-testid="hngLink" href="hng.tech/learn">hng.tech/learn<span>.</span></a>
+            <a data-testid="keywordLink" href="keyword.dog">keyword.dog<span>.</span></a>
+            <a data-testid="scrapeanywebLink" href="scrapeanyweb.site">scrapeanyweb.site<span>.</span></a>
         </div>
     </div>
 

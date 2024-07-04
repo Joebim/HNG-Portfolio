@@ -17,7 +17,6 @@ p {
 
 .navbar-wrap {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
@@ -28,7 +27,11 @@ p {
     color: #000000;
 }
 
-.navbar h1 span {
+.navbar a {
+    text-decoration: none;
+}
+
+span {
     color: #ff5e00;
 }
 
@@ -47,12 +50,17 @@ p {
     color: #000000;
     border-radius: 2px;
     cursor: pointer;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    height: 85vh;
 }
 
 .right-side-content {
@@ -65,25 +73,208 @@ p {
 
 
 .profile-details {
-    flex: 4;
-    padding-left: 80px;
+    padding: 100px 0px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
-.footer {
-    padding-left: 80px;
-    flex: 1;
-    background-color: black;
+.title-time-contain {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
 }
+
+.time-details-contain {
+    display: flex;
+    gap: 20px;
+}
+
+.name {
+    font-size: 80px;
+}
+
+.goals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goals-head-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.goals-head-contain div {
+    padding: 5px 10px;
+    background-color: #ff843d;
+    color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    align-self: self-start;
+}
+
+.goal-title {
+    font-size: 25px;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goal-column {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.goal {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.goal-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
 
 .left-side-content {
-    flex: 1;
     background-color: #DDD1C1;
-    padding: 40px 20px 0px 20px;
     display: flex;
-    justify-content: end;
+    align-items: end;
+}
+
+.content-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .left-side-content img {
+    align-self: center;
+}
+
+.picture-info {
+    background-color: #ff843d;
     width: 100%;
-    align-self: self-end;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-info-contain {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-info-contain h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.picture-info-contain p {
+    color: white;
+    font-size: 15px;
+}
+
+
+#time,
+#day {
+    align-self: center;
+}
+
+
+.footer {
+    height: 100px;
+    padding-left: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1303px) {
+
+
+    .goal-column {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .picture-contain {
+        display: flex;
+        align-items: end;
+    }
+
+    .content-contain {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .picture-info {
+        height: 68vh;
+    }
+
+    .left-side-content img {
+        align-self: end;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .navbar {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .content-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture-info {
+        height: 20vh;
+    }
+
+    .title-time-contain {
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .profile-details {
+        padding: 40px 0px 40px 30px;
+    }
+
+    .footer {
+        padding-left: 0px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
